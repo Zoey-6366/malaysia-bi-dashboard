@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102534">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="马来西亚汽车膜BI参考模板中心">
+  <title>马来西亚汽车膜 BI 参考模板中心</title>
+  <style>
+:root{--navy:#102534;--ink:#15232d;--muted:#6e7c86;--line:#dbe3e7;--paper:#fff;--bg:#eef2f3;--lime:#cde85d;--teal:#0b8c84;--blue:#3177c7}
+html{-webkit-text-size-adjust:100%}body{overflow-wrap:anywhere}.hub{padding-bottom:max(64px,env(safe-area-inset-bottom))}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}.hub{max-width:1180px;margin:auto;padding:64px 28px}.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:42px}.eyebrow{color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.15em}.hero h1{font-size:50px;line-height:1.06;letter-spacing:-.045em;margin:14px 0 20px}.lead{max-width:650px;color:var(--muted);font-size:16px;line-height:1.8}.version-card{width:164px;background:var(--navy);color:#fff;border-radius:20px;padding:24px;box-shadow:0 20px 50px rgba(17,38,53,.18)}.version-card span,.version-card small{display:block;color:#aebbc3;font-size:10px;letter-spacing:.15em}.version-card strong{display:block;color:var(--lime);font-size:48px;margin:12px 0}.template-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.template-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:0 12px 36px rgba(28,48,59,.07);position:relative;overflow:hidden}.template-card::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--teal)}.template-card.blueprint::before{background:var(--blue)}.card-top{display:flex;justify-content:space-between;align-items:center}.card-top span{font-size:13px;font-weight:800;color:var(--teal)}.card-top em{font-style:normal;background:#e3f4f1;color:#16736e;border-radius:99px;padding:6px 10px;font-size:10px}.blueprint .card-top span{color:var(--blue)}.blueprint .card-top em{background:#e8f0fb;color:#2a64a6}.template-card h2{font-size:27px;margin:24px 0 12px}.template-card p{color:var(--muted);line-height:1.75;font-size:14px;min-height:74px}.template-card ul{list-style:none;margin:22px 0;padding:0;display:grid;gap:10px}.template-card li{font-size:13px;padding-left:20px;position:relative}.template-card li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:800}.blueprint li::before{color:var(--blue)}.template-card a{display:flex;justify-content:space-between;align-items:center;margin-top:28px;padding:15px 18px;border-radius:11px;background:var(--navy);color:#fff;text-decoration:none;font-size:13px;font-weight:700}.template-card a b{color:var(--lime);font-size:20px}.governance{margin-top:22px;background:var(--navy);color:#fff;border-radius:18px;padding:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.governance div{padding:4px 18px;border-left:1px solid rgba(255,255,255,.15)}.governance strong,.governance span{display:block}.governance strong{color:var(--lime);font-size:13px}.governance span{color:#b7c2c9;font-size:11px;line-height:1.65;margin-top:8px}@media(max-width:760px){.hub{padding:34px 16px}.hero{align-items:flex-start}.version-card{display:none}.hero h1{font-size:38px}.template-grid,.governance{grid-template-columns:1fr}.template-card p{min-height:0}}
+
+</style>
+</head>
+<body>
+  <main class="hub">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">YANG AUTO FILM · MALAYSIA BI</p>
+        <h1>马来西亚经营分析<br>参考模板中心</h1>
+        <p class="lead">两个模板、两种用途、同一套数据治理规则。模板优化和日常数据更新严格分离。</p>
+      </div>
+      <div class="version-card"><span>REFERENCE</span><strong>R1</strong><small>2026-07-29</small></div>
+    </header>
+
+    <section class="template-grid">
+      <article class="template-card current">
+        <div class="card-top"><span>01</span><em>可直接使用</em></div>
+        <h2>现有数据可实现版</h2>
+        <p>基于ERP订单、门店主数据、仓库缺货、飞书拜访和客服汇总。只发布能够追溯或明确标注边界的指标。</p>
+        <ul>
+          <li>全局时间筛选联动</li>
+          <li>销售、门店、区域和缺货动态计算</li>
+          <li>拜访及客服缺明细时阻止误报</li>
+          <li>适合每天导入最新数据后更新</li>
+        </ul>
+        <a href="./current.html">进入现有数据版 <b>→</b></a>
+      </article>
+
+      <article class="template-card blueprint">
+        <div class="card-top"><span>02</span><em>完整建设蓝图</em></div>
+        <h2>完整经营看板蓝图版</h2>
+        <p>完整覆盖思维导图13个主题。无数据模块保留筛选器、指标卡、分析组件和数据接入要求，不展示演示数字。</p>
+        <ul>
+          <li>经营、市场、门店、销售、区域、能效</li>
+          <li>产品、库存供应、预警、人员绩效</li>
+          <li>利润现金、目标预测、数据治理</li>
+          <li>适合作为长期BI建设验收标准</li>
+        </ul>
+        <a href="./blueprint.html">进入完整蓝图版 <b>→</b></a>
+      </article>
+    </section>
+
+    <section class="governance">
+      <div><strong>更新数据</strong><span>只替换数据与刷新结果，不改变页面、指标口径、布局和交互。</span></div>
+      <div><strong>优化模板</strong><span>才允许修改结构、页面、指标定义、视觉和交互，并生成新的参考版本。</span></div>
+      <div><strong>版本原则</strong><span>参考模板独立留档；任何新版本不覆盖已确认版本，便于回退和对比。</span></div>
+    </section>
+  </main>
+</body>
+</html>
