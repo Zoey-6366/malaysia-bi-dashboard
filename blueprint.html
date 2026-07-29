@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102534">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="马来西亚汽车膜完整经营BI蓝图">
+  <title>完整经营看板蓝图版 R1</title>
+  <style>
+:root{--ink:#15232d;--muted:#71808a;--line:#dce4e8;--panel:#fff;--bg:#f1f4f5;--navy:#102534;--blue:#3278c8;--soft:#eaf2fb;--lime:#cee85f;--amber:#e69b38}
+html{-webkit-text-size-adjust:100%}body{overflow-wrap:anywhere}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}.shell{min-height:100vh;display:grid;grid-template-columns:238px 1fr}aside{position:sticky;top:0;height:100vh;background:var(--navy);color:#fff;padding:22px 16px;overflow-y:auto}.back{display:inline-block;color:#9fb0ba;text-decoration:none;font-size:11px;margin:0 8px 18px}.brand{display:flex;align-items:center;gap:11px;border-bottom:1px solid rgba(255,255,255,.13);padding:0 8px 20px}.brand>b{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--lime);color:var(--navy)}.brand strong,.brand small{display:block}.brand strong{font-size:12px}.brand small{font-size:9px;color:#9fb0ba;margin-top:3px}nav{display:grid;gap:4px;margin-top:18px}.nav-button{border:0;background:transparent;color:#b7c3ca;padding:9px 10px;border-radius:8px;text-align:left;font-size:10px;display:flex;gap:9px;align-items:center}.nav-button b{font-size:9px;color:#6f8795}.nav-button:hover,.nav-button.active{background:rgba(255,255,255,.1);color:#fff}.nav-button.active b{color:var(--lime)}.blueprint-badge{margin-top:20px;padding:12px;border-radius:9px;background:rgba(255,255,255,.07)}.blueprint-badge strong,.blueprint-badge span{display:block}.blueprint-badge strong{font-size:11px;color:var(--lime)}.blueprint-badge span{font-size:9px;color:#9fb0ba;margin-top:4px}main{min-width:0;padding:28px 34px 46px}header{display:flex;justify-content:space-between;gap:24px;align-items:flex-start}.eyebrow{color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.15em;margin:0 0 7px}h1{font-size:29px;margin:0}header>div>p:last-child{color:var(--muted);font-size:13px;margin:8px 0 0}.filters{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.filters label{background:#fff;border:1px solid var(--line);border-radius:9px;padding:8px 10px;font-size:10px;color:var(--muted)}.filters span{color:var(--ink);margin-left:5px}.scope{display:flex;gap:28px;flex-wrap:wrap;background:#e6ebed;border-radius:10px;padding:12px 16px;margin:24px 0 15px}.scope div{display:flex;gap:7px;font-size:10px}.scope span{color:var(--muted)}.pending{color:#9c650e}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi,.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(22,42,54,.05)}.kpi{padding:16px;min-height:126px;border-left:3px solid var(--blue)}.kpi-head{display:flex;justify-content:space-between;color:var(--muted);font-size:10px}.status{background:var(--soft);color:var(--blue);border-radius:99px;padding:4px 6px;font-size:8px}.empty-value{font-size:26px;color:#a9b5bc;margin:17px 0 8px}.kpi p{font-size:9px;color:var(--muted);line-height:1.5;margin:0}.grid{display:grid;grid-template-columns:1.45fr 1fr;gap:12px;margin-top:12px}.panel{padding:17px;min-width:0}.panel.wide{grid-column:1/-1}.panel-title{display:flex;justify-content:space-between;gap:15px;margin-bottom:15px}.panel h2{font-size:14px;margin:0}.panel-title p{color:var(--muted);font-size:9px;margin:4px 0 0}.source{background:var(--soft);color:var(--blue);padding:5px 7px;border-radius:99px;font-size:8px;white-space:nowrap}.placeholder{min-height:180px;display:grid;place-items:center;text-align:center;border:1px dashed #cbd6dc;border-radius:9px;background:linear-gradient(135deg,#fafcfd,#f1f5f8);color:var(--muted)}.placeholder b,.placeholder span{display:block}.placeholder b{color:#84949e;font-size:12px}.placeholder span{font-size:9px;line-height:1.6;margin-top:7px}.requirements{display:grid;gap:7px}.requirements div{display:grid;grid-template-columns:115px 1fr;gap:10px;background:#f5f7f8;border-radius:8px;padding:9px 11px;font-size:9px}.requirements strong{color:var(--blue)}.requirements span{color:var(--muted);line-height:1.5}.component-map{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.component-map span{background:var(--soft);color:#2e619c;padding:11px 8px;border-radius:8px;font-size:9px;text-align:center}.formula{background:#102534;color:#fff;border-radius:9px;padding:14px;font-size:10px;line-height:1.7}.formula strong{color:var(--lime)}@media(max-width:1100px){.kpis{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.panel.wide{grid-column:auto}}@media(max-width:760px){.shell{grid-template-columns:1fr}aside{position:static;height:auto}nav{grid-template-columns:repeat(3,1fr)}.nav-button{justify-content:center}.blueprint-badge{display:none}main{padding:20px 16px}header{flex-direction:column}.filters{justify-content:flex-start}.kpis{grid-template-columns:1fr}.component-map{grid-template-columns:repeat(2,1fr)}}
+
+</style>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <a class="back" href="./index.html">← 模板中心</a>
+      <div class="brand"><b>Y</b><div><strong>YANG AUTO FILM</strong><small>完整经营蓝图 R1</small></div></div>
+      <nav id="nav"></nav>
+      <div class="blueprint-badge"><strong>无演示数字</strong><span>结构保留 · 等待数据接入</span></div>
+    </aside>
+    <main>
+      <header>
+        <div><p class="eyebrow">MALAYSIA · COMPLETE BI BLUEPRINT</p><h1 id="title">经营总览</h1><p id="subtitle"></p></div>
+        <div class="filters">
+          <label>日期 <span>待接入日历表</span></label>
+          <label>州属 <span>全部</span></label>
+          <label>渠道 <span>全部</span></label>
+          <label>产品 <span>全部</span></label>
+        </div>
+      </header>
+      <section class="scope">
+        <div><span>模板类型</span><strong>完整经营蓝图</strong></div>
+        <div><span>主题覆盖</span><strong>13 / 13</strong></div>
+        <div><span>展示规则</span><strong>无数据不填数字</strong></div>
+        <div><span>状态</span><strong class="pending">等待数据接入</strong></div>
+      </section>
+      <div id="content"></div>
+    </main>
+  </div>
+<script>
+const modules=[
+  {id:"overview",no:"01",name:"经营总览",question:"今天、本月、年度整体经营怎么样？当前最重要的异常是什么？",kpis:["净销售额","实收金额","有效订单","标准销量","活跃拿货门店","新增拿货门店","毛利率","逾期应收"],charts:["目标完成与剩余日均","销售/毛利趋势","区域贡献热力","经营异常行动清单"],source:"订单行、回款、目标、成本、门店主数据"},
+  {id:"funnel",no:"02",name:"市场开拓漏斗",question:"团队跑了多少、每一步损失在哪里、最终转化如何？",kpis:["计划拜访","实际拜访","决策者触达","有效建群","报价门店","首单门店","开拓转化率","单店开拓成本"],charts:["门店级漏斗","渠道来源转化","人员开拓效率","未成交原因"],source:"门店级拜访、咨询、报价、订单"},
+  {id:"quality",no:"03",name:"门店质量分析",question:"马来西亚门店质量如何，哪些门店值得重点经营？",kpis:["有效门店","精准门店","有技师门店","有采购权门店","高意向门店","门店质量分","资料完整率","潜力门店"],charts:["门店质量评分分布","门店标签画像","质量×销量矩阵","待完善门店清单"],source:"门店主数据、拜访明细、评分规则"},
+  {id:"sales",no:"04",name:"销售与复购",question:"谁在持续拿货，销售结构和复购是否健康？",kpis:["有效应收","有效订单","客单价","首购门店","30天复购率","60天复购率","流失门店","Top10集中度"],charts:["客户生命周期漏斗","复购队列","门店销售排名","流失原因"],source:"完整历史订单、门店ID、退款"},
+  {id:"region",no:"05",name:"区域市场分析",question:"哪个州和城市值得重点投入，区域动作是否有效？",kpis:["州属销售","州属门店","拜访覆盖率","区域转化率","区域复购率","店均能效","市场渗透率","区域目标完成率"],charts:["马来西亚州属热力地图","州→城市→门店下钻","区域四象限","区域机会清单"],source:"标准州属城市、订单、拜访、目标、市场容量"},
+  {id:"efficiency",no:"06",name:"门店能效",question:"不同门店类型每月能贡献多少，怎样提升单店产出？",kpis:["单店销售","店均订单","标准销量/店","毛利/店","拜访产出","技师产出","等级能效","城市能效"],charts:["门店能效分层","同等级对标","能效趋势","低效高潜门店"],source:"门店、订单行、技师、成本、拜访"},
+  {id:"demand",no:"07",name:"产品需求与颜色趋势",question:"客户主要要什么，哪些产品和颜色影响成交与复购？",kpis:["SKU销量","标准平方米","咨询次数","咨询转化率","热销颜色","需求缺口","新品渗透率","售后率"],charts:["产品结构","颜色趋势","咨询→成交路径","产品×区域矩阵"],source:"订单行、SKU主数据、客服咨询、售后"},
+  {id:"supply",no:"08",name:"库存、缺货与供应",question:"哪些SKU可能断货，采购和海运是否按时到仓？",kpis:["可售库存","库存可售天数","缺货SKU","缺货损失","在途金额","采购满足率","ETA准时率","呆滞库存"],charts:["库存健康矩阵","需求预测与库存","采购/海运时间轴","缺货客户价值"],source:"库存快照、PO、海运柜次、SKU、订单"},
+  {id:"alerts",no:"09",name:"门店预警与回访",question:"哪些门店需要立即跟进，责任人和结果如何？",kpis:["轻度预警","中度预警","严重预警","流失预警","欠款预警","售后预警","逾期任务","回访完成率"],charts:["预警门店清单","预警原因结构","负责人任务看板","回访闭环率"],source:"订单、应收、拜访、售后、任务记录"},
+  {id:"people",no:"10",name:"人员执行与绩效",question:"每个人负责哪些门店、过程动作和经营结果如何？",kpis:["负责门店","有效拜访","决策者触达","首单转化","复购贡献","销售贡献","任务完成率","投入产出"],charts:["个人过程×结果矩阵","人员漏斗","目标完成率","绩效明细"],source:"人员ID、拜访、门店归属、订单、目标"},
+  {id:"finance",no:"11",name:"利润、回款与现金",question:"业务是否真正赚钱，现金何时流入和流出？",kpis:["净销售额","到岸成本","毛利额","毛利率","应收余额","逾期应收","现金余额","经营现金流"],charts:["利润瀑布","应收账龄","产品/客户毛利","13周现金预测"],source:"财务凭证、回款核销、到岸成本、预算"},
+  {id:"planning",no:"12",name:"目标、预测与管理复盘",question:"目标完成多少，月末会到哪里，下一步由谁负责？",kpis:["销售目标","目标完成率","毛利目标","开拓目标","复购目标","月末预测","目标差额","剩余日均要求"],charts:["目标Actual/Forecast","滚动预测","差异归因","行动复盘"],source:"年度/月度目标、预测、实际、行动记录"},
+  {id:"governance",no:"13",name:"数据底座与治理",question:"数据能否对账、主键是否贯通、谁对质量负责？",kpis:["数据源接入率","统一ID覆盖率","关键字段完整率","主键重复率","对账差异","刷新及时率","异常未解决","模型成熟度"],charts:["数据血缘","质量门禁","主数据覆盖","建设路线图"],source:"所有业务系统、数据字典、质量规则"}
+];
+const nav=document.getElementById("nav"),content=document.getElementById("content");
+nav.innerHTML=modules.map((m,i)=>`<button class="nav-button ${i===0?"active":""}" data-id="${m.id}"><b>${m.no}</b><span>${m.name}</span></button>`).join("");
+function kpi(name){return `<article class="kpi"><div class="kpi-head"><span>${name}</span><span class="status">待接入</span></div><div class="empty-value">—</div><p>保留指标位置；接入对应事实表和统一主键后展示实际值、目标、差额、环比和同比。</p></article>`}
+function panel(title,sub,body,wide=false,source=""){return `<section class="panel ${wide?"wide":""}"><div class="panel-title"><div><h2>${title}</h2><p>${sub}</p></div>${source?`<span class="source">${source}</span>`:""}</div>${body}</section>`}
+function render(id){
+  const m=modules.find(x=>x.id===id)||modules[0];
+  document.getElementById("title").textContent=m.name;
+  document.getElementById("subtitle").textContent=m.question;
+  document.querySelectorAll(".nav-button").forEach(x=>x.classList.toggle("active",x.dataset.id===m.id));
+  content.innerHTML=`<section class="kpis">${m.kpis.map(kpi).join("")}</section><div class="grid">
+    ${panel(m.charts[0],"核心管理视图",`<div class="placeholder"><div><b>${m.charts[0]}</b><span>等待数据接入后生成真实图表和下钻明细</span></div></div>`,false,"结构已保留")}
+    ${panel("数据接入要求","本页面发布前必须满足",`<div class="requirements">
+      <div><strong>权威数据源</strong><span>${m.source}</span></div>
+      <div><strong>统一主键</strong><span>日期、门店ID、人员ID、SKU、订单号按业务主题贯通</span></div>
+      <div><strong>发布门禁</strong><span>关键字段非空、主键不重复、结果可对账、刷新时间可追踪</span></div>
+      <div><strong>无数据规则</strong><span>未接入时显示“待接入”，不得填写演示数字</span></div>
+    </div>`)}
+    ${panel("页面组件清单","后续接入数据时不需要重新设计页面",`<div class="component-map">${m.charts.map(x=>`<span>${x}</span>`).join("")}</div>`,true,"完整框架")}
+    ${panel("统一分析口径","每个指标均需具备定义、公式、维度和责任人",`<div class="formula"><strong>指标发布标准</strong><br>业务定义 ＋ 计算公式 ＋ 粒度 ＋ 时间逻辑 ＋ 排除条件 ＋ 权威数据源 ＋ 数据负责人 ＋ 刷新频率</div>`,true)}
+  </div>`;
+}
+nav.addEventListener("click",e=>{const b=e.target.closest("[data-id]");if(b)render(b.dataset.id)});
+render("overview");
+
+</script>
+</body>
+</html>
